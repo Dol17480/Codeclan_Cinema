@@ -27,7 +27,12 @@ customer4 = Customer.new({ 'name' => 'Liam', 'funds' => 20 })
 customer4.save()
 customer5 = Customer.new({ 'name' => 'Erin', 'funds' => 10})
 customer5.save()
-
+customer6 = Customer.new({ 'name' => 'Tom', 'funds' => 50 })
+customer6.save()
+customer7 = Customer.new({ 'name' => 'Joan', 'funds' => 40 })
+customer7.save()
+customer8 = Customer.new({ 'name' => 'Audrey', 'funds' => 30 })
+customer8.save()
 
 ticket1 = Ticket.new({ 'customer_id' => customer1.id , 'film_id' => film1.id })
 ticket1.save
@@ -38,6 +43,11 @@ ticket3.save
 ticket4 = Ticket.new({ 'customer_id' => customer4.id , 'film_id' => film4.id })
 ticket4.save
 ticket5 = Ticket.new({ 'customer_id' => customer5.id, 'film_id' => film1.id })
+ticket5.save
+ticket6 = Ticket.new({ 'customer_id' => customer6.id, 'film_id' => film4.id })
+ticket6.save
+ticket7 = Ticket.new({ 'customer_id' => customer7.id, 'film_id' => film3.id })
+ticket7.save
 
 binding.pry
 nil
